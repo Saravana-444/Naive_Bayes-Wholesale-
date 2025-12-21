@@ -24,8 +24,8 @@ if st.button("Predict Customer Class"):
     input_data = np.array([[Fresh, Milk, Grocery, Frozen,
                             Detergents_Paper, Delicassen]])
 
-    prediction = model.predict(input_data)
-    prediction_proba = model.predict_proba(input_data)
+    prediction = GB.predict(input_data)
+    prediction_proba = GB.predict_proba(input_data)
 
     st.success(f"Predicted Class: {prediction[0]}")
     st.write("Prediction Probability:", prediction_proba)
