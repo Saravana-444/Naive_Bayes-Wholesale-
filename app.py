@@ -3,8 +3,8 @@ import pickle
 import numpy as np
 
 # Load trained model
-with open("model.pkl", "rb") as file:
-    model = pickle.load(file)
+with open("GB.pkl", "rb") as file:
+    GB = pickle.load(file)
 
 st.set_page_config(page_title="Wholesale Customer Prediction", layout="centered")
 
